@@ -4,11 +4,13 @@ import java.io.Serializable;
 import java.util.Vector;
 
 public class Page implements Serializable {
-    Vector<Tuple> records;
+    public Vector<Tuple> records;
 
     public Page() {
         records = new Vector<Tuple>();
     }
+
+    // TODO: Add a way to insert a tuple, i think?
 
     @Override
     public String toString() {
