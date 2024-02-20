@@ -1,25 +1,30 @@
 package databasemanagement;
 
 import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Tuple implements Serializable {
 
-    private String name;
-    private Object object;
+    private final Map<String, Object> tuple;
+    private String name = "";
 
     public Tuple(String name, Integer object) {
+        tuple = new HashMap<String, Object>();
         this.name = name;
-        this.object = object;
+        tuple.put(name, object);
     }
 
     public Tuple(String name, String object) {
         this.name = name;
-        this.object = object;
+        tuple = new HashMap<String, Object>();
+        tuple.put(name, object);
     }
 
     public Tuple(String name, Double object) {
         this.name = name;
-        this.object = object;
+        tuple = new HashMap<String, Object>();
+        tuple.put(name, object);
     }
 
     public String getName() {
@@ -27,6 +32,6 @@ public class Tuple implements Serializable {
     }
 
     public Object getObject() {
-        return object;
+        return tuple.get(name);
     }
 }
