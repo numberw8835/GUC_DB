@@ -4,8 +4,8 @@ import java.io.Serializable;
 
 public class Tuple implements Serializable {
 
-    String name;
-    Object object;
+    private String name;
+    private Object object;
 
     public Tuple(String name, Integer object) {
         this.name = name;
