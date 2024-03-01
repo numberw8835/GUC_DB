@@ -16,12 +16,14 @@ public class DBApp {
 
     public static void main(String[] args) {
 
+        // Testing my code delete if you wish!
+        // Start
         Tupe t = new Tupe();
         t.addField(new Field("Name", "Ahmed"));
         t.addField(new Field("Age", 23));
         t.addField(new Field("GPA", 0.95));
-
         System.out.println(t.toString());
+        // End
 
         try {
             String strTableName = "Student";
