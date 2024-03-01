@@ -2,10 +2,10 @@ package databasemanagement;
 
 import java.util.Vector;
 
-public class Tuple {
-    private Vector<PlaceHolder> tuple;
+public class PlaceHolderTuple {
+    private Vector<PlaceHolderField> tuple;
 
-    public Tuple(Vector<PlaceHolder> placeHolders) {
+    public PlaceHolderTuple(Vector<PlaceHolderField> placeHolders) {
         this.tuple = new Vector<>(placeHolders);
     }
 
@@ -18,11 +18,11 @@ public class Tuple {
         return false;
     }
 
-    public void addPlaceholder(PlaceHolder placeholder) {
+    public void addPlaceholder(PlaceHolderField placeholder) {
         this.tuple.add(placeholder);
     }
 
-    public void deletePlaceholder(PlaceHolder placeholder) {
+    public void deletePlaceholder(PlaceHolderField placeholder) {
         for (int i = 0; i < tuple.size(); i++) {
             if (tuple.get(i).equals(placeholder)) {
                 tuple.removeElementAt(i);

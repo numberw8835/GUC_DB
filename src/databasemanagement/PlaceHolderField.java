@@ -3,7 +3,7 @@ package databasemanagement;
 /**
  * A class representing a placeholder in a database table.
  */
-public class PlaceHolder {
+public class PlaceHolderField {
     private final String name;
     private final DataType type;
 
@@ -13,7 +13,7 @@ public class PlaceHolder {
      * @param name The name of the placeholder.
      * @param type The data type of the placeholder.
      */
-    public PlaceHolder(String name, String type) {
+    public PlaceHolderField(String name, String type) {
         this.name = name;
         this.type = detectDataType(type);
     }

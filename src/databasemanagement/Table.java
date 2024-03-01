@@ -6,11 +6,11 @@ import java.util.Vector;
 public class Table {
     private String tableName;
     private String primaryKey;
-    private Tuple columns;
+    private PlaceHolderTuple columns;
     private Hashtable<String, BPlusTree> clusterIndices;
     private Vector<Page> pages;
 
-    public Table(String tableName, String primaryKey, Tuple columns) {
+    public Table(String tableName, String primaryKey, PlaceHolderTuple columns) {
         this.tableName = tableName;
         this.primaryKey = primaryKey;
         this.columns = columns;
@@ -34,11 +34,11 @@ public class Table {
         this.primaryKey = primaryKey;
     }
 
-    public Tuple getColumns() {
+    public PlaceHolderTuple getColumns() {
         return columns;
     }
 
-    public void setColumns(Tuple columns) {
+    public void setColumns(PlaceHolderTuple columns) {
         this.columns = columns;
     }
 

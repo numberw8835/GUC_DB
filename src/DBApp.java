@@ -2,6 +2,9 @@
  * @author Wael Abouelsaadat
  */
 
+import databasemanagement.Field;
+import databasemanagement.Tupe;
+
 import java.util.Hashtable;
 import java.util.Iterator;
 
@@ -12,6 +15,13 @@ public class DBApp {
     }
 
     public static void main(String[] args) {
+
+        Tupe t = new Tupe();
+        t.addField(new Field("Name", "Ahmed"));
+        t.addField(new Field("Age", 23));
+        t.addField(new Field("GPA", 0.95));
+
+        System.out.println(t.toString());
 
         try {
             String strTableName = "Student";
