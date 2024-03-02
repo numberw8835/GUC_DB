@@ -3,7 +3,7 @@
  */
 
 import databasemanagement.Field;
-import databasemanagement.Tupe;
+import databasemanagement.Tuple;
 
 import java.util.Hashtable;
 import java.util.Iterator;
@@ -18,7 +18,7 @@ public class DBApp {
 
         // Testing my code delete if you wish!
         // Start
-        Tupe t = new Tupe();
+        Tuple t = new Tuple();
         t.addField(new Field("Name", "Ahmed"));
         t.addField(new Field("Age", 23));
         t.addField(new Field("GPA", 0.95));

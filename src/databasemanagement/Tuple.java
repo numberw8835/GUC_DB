@@ -2,14 +2,14 @@ package databasemanagement;
 
 import java.util.Vector;
 
-public class Tupe {
+public class Tuple {
     private Vector<Field> tuple;
 
-    public Tupe(Vector<Field> tuple) {
+    public Tuple(Vector<Field> tuple) {
         this.tuple = new Vector<>(tuple);
     }
 
-    public Tupe() {
+    public Tuple() {
         this.tuple = new Vector<>();
     }
 
