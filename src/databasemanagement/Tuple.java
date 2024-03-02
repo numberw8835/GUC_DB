@@ -1,8 +1,9 @@
 package databasemanagement;
 
+import java.io.Serializable;
 import java.util.Vector;
 
-public class Tuple {
+public class Tuple implements Serializable {
     private Vector<Field> tuple;
 
     public Tuple(Vector<Field> tuple) {

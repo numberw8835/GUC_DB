@@ -3,6 +3,7 @@
  */
 
 import databasemanagement.Field;
+import databasemanagement.Page;
 import databasemanagement.Tuple;
 
 import java.util.Hashtable;
@@ -14,7 +15,7 @@ public class DBApp {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         // Testing my code delete if you wish!
         // Start
@@ -23,6 +24,10 @@ public class DBApp {
         t.addField(new Field("Age", 23));
         t.addField(new Field("GPA", 0.95));
         System.out.println(t.toString());
+        Page p = new Page(5);
+        p.addValue(t);
+        p.savePage();
+        System.out.println(p.getIndexName());
         // End
 
         try {

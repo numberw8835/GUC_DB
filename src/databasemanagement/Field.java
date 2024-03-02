@@ -1,9 +1,11 @@
 package databasemanagement;
 
+import java.io.Serializable;
+
 /**
  * A class representing a field in a database table.
  */
-public class Field {
+public class Field implements Serializable {
     private String name;
     private Object thing;
 
